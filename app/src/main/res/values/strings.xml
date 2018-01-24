@@ -5,10 +5,11 @@
     <string name="paper_button">Paper!</string>
     <string name="scissors_button">Scissors!</string>
     <string name="rules_button">Rules</string>
-    <string name="rules_text">Choose rock, paper or scissors. You win if your choice
-                              beats the computer\'s choice. \n \n 1) Rock beats scissors but loses to
-                            paper. \n 2) Scissors beats paper but loses to rock. \n 3) Paper beats
-                              rock but loses to scissors. \n Good luck!!!
+    <string name="rules_header">The Rules of the Game:</string>
+    <string name="rules_text">Choose rock, paper or scissors. If you
+                              beat the computer\'s choice, you win! \n \n 1) Rock beats scissors but loses to
+                            paper. \n \n 2) Scissors beats paper but loses to rock. \n \n 3) Paper beats
+                              rock but loses to scissors. \n \n Good luck!
 
     </string>
     <string name="player_score">Player: </string>

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@android:color/holo_red_dark"
+    android:backgroundTint="@color/white"
+    android:background="#FFFFFF"
     tools:context="example.codeclan.com.rockpaperscissors.RockPaperScissorsActivity">
 
     <TextView
@@ -61,7 +62,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@android:color/holo_green_dark"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/rules_button"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,7 +77,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/rules_button"
         app:layout_constraintEnd_toEndOf="parent"
