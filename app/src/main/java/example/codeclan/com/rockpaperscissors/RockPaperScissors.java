@@ -28,12 +28,12 @@ public class RockPaperScissors {
             return "Computer chose scissors: \n Scissors beats paper, computer wins!";
         } else if(playerHand == "paper" && computerHand == "rock"){
             this.isWon = 1;
-            return "Computer chose rock \n Paper beats rock, player 1 wins!";
+            return "Computer chose rock: \n Paper beats rock, player 1 wins!";
         } else if(playerHand == "scissors" && computerHand == "rock"){
-            return "Computer chose rock \n Rock beats scissors, computer wins!";
+            return "Computer chose rock: \n Rock beats scissors, computer wins!";
         } else if(playerHand == "scissors" && computerHand == "paper"){
             this.isWon = 1;
-            return "Computer chose paper \n Scissors beats paper, player 1 wins!";
+            return "Computer chose paper: \n Scissors beats paper, player 1 wins!";
         } else
             this.isWon = 2;
             return"It's a draw!";

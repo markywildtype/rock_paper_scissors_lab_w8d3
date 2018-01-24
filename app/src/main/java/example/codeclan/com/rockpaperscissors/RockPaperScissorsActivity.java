@@ -23,34 +23,22 @@ public class RockPaperScissorsActivity extends AppCompatActivity {
         playerScore = 0;
     }
 
-    public void onRockButtonClick(View button){
+    public void onRockButtonClick(View button) {
         game = new RockPaperScissors("rock");
-        String result = game.play();
-        game_result = findViewById(R.id.game_result);
-        game_result.setText(result);
-        if(game.gameIsWon() == 1){
-            playerScore += 1;
-        } else if(game.gameIsWon() == 0) {
-            computerScore += 1;
-        }
-        displayScores();
+        playGame();
     }
 
     public void onPaperButtonClick(View button) {
         game = new RockPaperScissors("paper");
-        String result = game.play();
-        game_result = findViewById(R.id.game_result);
-        game_result.setText(result);
-        if(game.gameIsWon() == 1){
-            playerScore += 1;
-        } else if(game.gameIsWon() == 0) {
-            computerScore += 1;
-        }
-        displayScores();
+        playGame();
     }
 
     public void onScissorsButtonClick(View button) {
         game = new RockPaperScissors("scissors");
+        playGame();
+    }
+
+    public void playGame(){
         String result = game.play();
         game_result = findViewById(R.id.game_result);
         game_result.setText(result);
@@ -59,15 +47,12 @@ public class RockPaperScissorsActivity extends AppCompatActivity {
         } else if(game.gameIsWon() == 0) {
             computerScore += 1;
         }
-        displayScores();
-    }
-
-    public void displayScores(){
         computerScoreBox = findViewById(R.id.computer_score);
         computerScoreBox.setText("Computer: " + String.valueOf(computerScore));
         playersScoreBox = findViewById(R.id.player_score);
         playersScoreBox.setText("Player: " + String.valueOf(playerScore));
     }
+
 
     public void onRulesButtonClick(View button) {
         Intent intent = new Intent(this, RulesActivity.class);

@@ -17,8 +17,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RulesActivity"
-            android:parentActivityName=".RockPaperScissorsActivity">
+            android:name=".RulesActivity">
+            <!--android:parentActivityName=".RockPaperScissorsActivity"-->
+
         </activity>
     </application>
 

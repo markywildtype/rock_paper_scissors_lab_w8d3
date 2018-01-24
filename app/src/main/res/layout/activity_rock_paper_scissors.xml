@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/welcome"
-        android:layout_width="188dp"
-        android:layout_height="68dp"
+        android:layout_width="300dp"
+        android:layout_height="44dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -29,7 +29,7 @@
         android:id="@+id/game_result"
         android:layout_width="300dp"
         android:layout_height="97dp"
-        android:layout_marginBottom="112dp"
+        android:layout_marginBottom="160dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:textAlignment="center"
@@ -94,7 +94,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.291"
+        app:layout_constraintVertical_bias="0.232"
         app:srcCompat="@drawable/rock" />
 
     <ImageButton
@@ -110,7 +110,7 @@
         app:layout_constraintEnd_toStartOf="@+id/scissors_image_button"
         app:layout_constraintStart_toEndOf="@+id/rock_image_button"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.291"
+        app:layout_constraintVertical_bias="0.232"
         app:srcCompat="@drawable/paper" />
 
     <ImageButton
@@ -124,7 +124,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.291"
+        app:layout_constraintVertical_bias="0.232"
         app:srcCompat="@drawable/scissors" />
 
 </android.support.constraint.ConstraintLayout>
