@@ -10,11 +10,11 @@ public class RockPaperScissors {
 
     private String playerHand;
     private String computerHand;
-    private boolean isWon;
+    private int isWon;
 
     public RockPaperScissors(String playerHand){
         this.playerHand = playerHand;
-        this.isWon = false;
+        this.isWon = 0;
     }
 
     public String play(){
@@ -22,19 +22,21 @@ public class RockPaperScissors {
         if(playerHand == "rock" && computerHand == "paper"){
             return "Paper beats rock, computer wins!";
         } else if(playerHand == "rock" && computerHand == "scissors"){
-            this.isWon = true;
+            this.isWon = 1;
             return "Rock beats scissors, player 1 wins!";
         } else if(playerHand == "paper" && computerHand == "scissors"){
             return "Scissors beats paper, computer wins!";
         } else if(playerHand == "paper" && computerHand == "rock"){
-            this.isWon = true;
+            this.isWon = 1;
             return "Paper beats rock, player 1 wins!";
         } else if(playerHand == "scissors" && computerHand == "rock"){
             return "Rock beats scissors, computer wins!";
         } else if(playerHand == "scissors" && computerHand == "paper"){
-            this.isWon = true;
+            this.isWon = 1;
             return "Scissors beats paper, player 1 wins!";
-        } else return"It's a draw!";
+        } else
+            this.isWon = 2;
+            return"It's a draw!";
     }
 
     public String computerHand(){
@@ -48,7 +50,7 @@ public class RockPaperScissors {
             return "scissors";
     }
 
-    public boolean gameIsWon() {
+    public int gameIsWon() {
         return this.isWon;
     }
 }

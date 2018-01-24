@@ -77,15 +77,17 @@
     <TextView
         android:id="@+id/game_result"
         android:layout_width="262dp"
-        android:layout_height="101dp"
+        android:layout_height="52dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/paper_button" />
+        app:layout_constraintTop_toBottomOf="@+id/paper_button"
+        app:layout_constraintVertical_bias="0.053" />
 
     <Button
         android:id="@+id/rules_button"
@@ -99,8 +101,10 @@
         android:text="@string/rules_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/game_result" />
+        app:layout_constraintTop_toBottomOf="@+id/game_result"
+        app:layout_constraintVertical_bias="0.882" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -149,5 +153,29 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.275"
         app:srcCompat="@drawable/scissors" />
+
+    <TextView
+        android:id="@+id/player_score"
+        android:layout_width="109dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/rules_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_result" />
+
+    <TextView
+        android:id="@+id/computer_score"
+        android:layout_width="109dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/rules_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/player_score"
+        app:layout_constraintTop_toBottomOf="@+id/game_result" />
 
 </android.support.constraint.ConstraintLayout>

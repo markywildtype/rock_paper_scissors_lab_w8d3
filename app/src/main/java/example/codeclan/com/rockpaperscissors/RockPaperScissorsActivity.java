@@ -10,11 +10,17 @@ public class RockPaperScissorsActivity extends AppCompatActivity {
 
     RockPaperScissors game;
     TextView game_result;
+    TextView computerScoreBox;
+    TextView playersScoreBox;
+    int computerScore;
+    int playerScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rock_paper_scissors);
+        computerScore = 0;
+        playerScore = 0;
     }
 
     public void onRockButtonClick(View button){
@@ -22,6 +28,15 @@ public class RockPaperScissorsActivity extends AppCompatActivity {
         String result = game.play();
         game_result = findViewById(R.id.game_result);
         game_result.setText(result);
+        if(game.gameIsWon() == 1){
+            playerScore += 1;
+        } else if(game.gameIsWon() == 0) {
+            computerScore += 1;
+        }
+        computerScoreBox = findViewById(R.id.computer_score);
+        computerScoreBox.setText(String.valueOf(computerScore));
+        playersScoreBox = findViewById(R.id.player_score);
+        playersScoreBox.setText(String.valueOf(playerScore));
     }
 
     public void onPaperButtonClick(View button) {
@@ -29,6 +44,15 @@ public class RockPaperScissorsActivity extends AppCompatActivity {
         String result = game.play();
         game_result = findViewById(R.id.game_result);
         game_result.setText(result);
+        if(game.gameIsWon() == 1){
+            playerScore += 1;
+        } else if(game.gameIsWon() == 0) {
+            computerScore += 1;
+        }
+        computerScoreBox = findViewById(R.id.computer_score);
+        computerScoreBox.setText(String.valueOf(computerScore));
+        playersScoreBox = findViewById(R.id.player_score);
+        playersScoreBox.setText(String.valueOf(playerScore));
     }
 
     public void onScissorsButtonClick(View button) {
@@ -36,6 +60,15 @@ public class RockPaperScissorsActivity extends AppCompatActivity {
         String result = game.play();
         game_result = findViewById(R.id.game_result);
         game_result.setText(result);
+        if(game.gameIsWon() == 1){
+            playerScore += 1;
+        } else if(game.gameIsWon() == 0) {
+            computerScore += 1;
+        }
+        computerScoreBox = findViewById(R.id.computer_score);
+        computerScoreBox.setText(String.valueOf(computerScore));
+        playersScoreBox = findViewById(R.id.player_score);
+        playersScoreBox.setText(String.valueOf(playerScore));
     }
 
     public void onRulesButtonClick(View button) {
