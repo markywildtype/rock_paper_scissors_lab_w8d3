@@ -1,14 +1,16 @@
 <resources>
     <string name="app_name">RockPaperScissors</string>
-    <string name="welcome">Welcome! Please choose an option to play!</string>
+    <string name="welcome">Choose your weapon!</string>
     <string name="rock_button">Rock!</string>
     <string name="paper_button">Paper!</string>
     <string name="scissors_button">Scissors!</string>
     <string name="rules_button">Rules</string>
-    <string name="rules_text">Choose either rock, paper or scissors. You win if your choice
-                              beats the computers choice. \n Rock beats scissors but loses to
+    <string name="rules_text">Choose rock, paper or scissors. You win if your choice
+                              beats the computer\'s choice. \n Rock beats scissors but loses to
                             paper. \n Scissors beats paper but loses to rock. \n Paper beats
                               rock but loses to scissors. \n Good luck!!!
 
     </string>
+    <string name="player_score">Player: </string>
+    <string name="computer_score">Computer: </string>
 </resources>
