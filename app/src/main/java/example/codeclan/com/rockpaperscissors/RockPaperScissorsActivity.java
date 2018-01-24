@@ -1,5 +1,6 @@
 package example.codeclan.com.rockpaperscissors;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -35,5 +36,10 @@ public class RockPaperScissorsActivity extends AppCompatActivity {
         String result = game.play();
         game_result = findViewById(R.id.game_result);
         game_result.setText(result);
+    }
+
+    public void onRulesButtonClick(View button) {
+        Intent intent = new Intent(this, RulesActivity.class);
+        startActivity(intent);
     }
 }

@@ -36,4 +36,26 @@ public class RockPaperScissorsTest {
     public void canDraw(){
         assertEquals("It's a draw!", rockPaperScissors2.play());
     }
+
+    @Test
+    public void gameIsWon(){
+        rockPaperScissors.play();
+        assertEquals(true, rockPaperScissors.gameIsWon());
+    }
+
+//    @Test
+//    public void computerScoreStartsAtZero(){
+//        assertEquals(0, rockPaperScissors.getComputerScore());
+//    }
+//
+//    @Test
+//    public void playerScoreStartsAtZero(){
+//        assertEquals(0, rockPaperScissors.getPlayerScore());
+//    }
+//
+//    @Test
+//    public void winIncrementsScore(){
+//        rockPaperScissors.play();
+//        assertEquals(1, rockPaperScissors.getComputerScore());
+//    }
 }
