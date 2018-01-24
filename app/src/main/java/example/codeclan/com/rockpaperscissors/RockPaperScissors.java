@@ -20,20 +20,20 @@ public class RockPaperScissors {
     public String play(){
         this.computerHand = computerHand();
         if(playerHand == "rock" && computerHand == "paper"){
-            return "Paper beats rock, computer wins!";
+            return "Computer chose paper: \n Paper beats rock, computer wins!";
         } else if(playerHand == "rock" && computerHand == "scissors"){
             this.isWon = 1;
-            return "Rock beats scissors, player 1 wins!";
+            return "Computer chose scissors: \n Rock beats scissors, player 1 wins!";
         } else if(playerHand == "paper" && computerHand == "scissors"){
-            return "Scissors beats paper, computer wins!";
+            return "Computer chose scissors: \n Scissors beats paper, computer wins!";
         } else if(playerHand == "paper" && computerHand == "rock"){
             this.isWon = 1;
-            return "Paper beats rock, player 1 wins!";
+            return "Computer chose rock \n Paper beats rock, player 1 wins!";
         } else if(playerHand == "scissors" && computerHand == "rock"){
-            return "Rock beats scissors, computer wins!";
+            return "Computer chose rock \n Rock beats scissors, computer wins!";
         } else if(playerHand == "scissors" && computerHand == "paper"){
             this.isWon = 1;
-            return "Scissors beats paper, player 1 wins!";
+            return "Computer chose paper \n Scissors beats paper, player 1 wins!";
         } else
             this.isWon = 2;
             return"It's a draw!";
